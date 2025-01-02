@@ -867,6 +867,53 @@ main {
   border-radius: inherit;
 }
 
+.skill {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.skill-category {
+  background-color: #2b2b2b; /* Dark card background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skill-category ul li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #cccccc; /* Light gray text */
+  position: relative;
+  padding-left: 1.5rem; /* Create space for the dash */
+}
+.skill-category ul li::before {
+  content: "-"; /* Add a dash as the bullet */
+  position: absolute;
+  left: 0; /* Position it to the left of the text */
+  color: #ffd700; /* Gold color for the dash */
+  font-weight: bold;
+}
+.skill-category h4{
+  font-size: 1rem;
+  color: #ffd700; /* Gold section title */
+  margin-bottom: 1rem;
+}
+.skill-category h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffd700; /* Gold title color */
+}
+
 
 
 
