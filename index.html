@@ -1,13 +1,544 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robert | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Robert Forsythe" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Robert Forsythe</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:Robert.forsythe1234@gmail.com" class="contact-link">Robert.forsythe1234@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+447709568280" class="contact-link">+447709568280</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Loughborough, Leicestershire, United Kingdom</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Robert151003" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/robert-forsythe-b60539196" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As a third-year software engineering student, I'm passionate about building innovative solutions and constantly expanding my technical skills. My academic journey, combined with hands-on projects, has allowed me to work with a variety of technologies, from web development and machine learning to video manipulation and real-time systems. 
+          </p>
+
+          <p>
+            I enjoy solving challenging problems and have experience with languages like Python, Java, and Web. Currently, I'm exploring new web frameworks such as React and Node.JS, and developing projects involving video streaming and AI.
+          </p>
+
+          <p>
+            I’m always eager to learn and collaborate on impactful projects, and I look forward to connecting with others in the tech industry!
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-WD.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Crafting cutting-edge and visually captivating websites 
+                  tailored to deliver exceptional user experiences and 
+                  meet professional standards.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-generativeAI.png" alt="Generative AI Icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Generative AI</h4>
+
+                <p class="service-item-text">
+                  Exploring and implementing generative AI techniques to create innovative models that generate new content and ideas.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-NLP.png" alt="NLP Icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Natural Language Processing</h4>
+
+                <p class="service-item-text">
+                  Building and optimizing NLP models to analyze and understand human language, 
+                  improving interactions between people and machines.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-SDA.png" alt="Statstics icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Statistics & Data Analytics</h4>
+
+                <p class="service-item-text">
+                  Applying statistical methods to analyze data and derive actionable insights, 
+                  supporting data-driven decision-making.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-CV.png" alt="Computer Vision icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision</h4>
+
+                <p class="service-item-text">
+                  Designing and implementing computer vision algorithms to enable systems to 
+                  understand and interpret visual data, powering applications like object detection 
+                  and image classification.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Robotics.png" alt="Robotics Icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robotics</h4>
+
+                <p class="service-item-text">
+                  Developing innovative robotics solutions and systems to automate tasks, 
+                  enhance efficiency, and solve real-world challenges with advanced technology.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Loughborough University</h4>
+
+              <span>2022 — 2025</span>
+
+              <p class="timeline-text">
+                Currently pursuing a degree in Computer Science with a strong emphasis on AI and software engineering. This is complemented by a strong background in data analysis techniques and mathematical understanding.  
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Harris Academy Riverside</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">A-Level Mathematics - A*</p>
+              <p class="timeline-text">A-Level Further Mathematics - A</p>
+              <p class="timeline-text">A-Level Physics - B</p>
+              <p class="timeline-text">A-Level Chemistry - B</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Harris Academy Chafford Hundred</h4>
+
+              <span>2015 — 2020</span>
+
+              <p class="timeline-text">
+                13 GCSE's Grade 6-9
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!--
+        Experience Section
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Personal Projects</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        -->
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <div class="skills-list content-card">
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+              <h4 class="h4">Programming Languages</h4>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Haskell</li>
+                <li>Kotlin</li>
+                <li>XML</li>
+              </ul>
+            </div>
+
+            <!-- Tools & Frameworks -->
+            <div class="skill-category">
+              <h4 class="h4">Tools &amp; Frameworks</h4>
+              <ul>
+                <li>TensorFlow</li>
+                <li>Keras</li>
+                <li>Scikit-learn</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>HTML & CSS</li>
+                <li>SQL</li>
+                <li>Unity</li>
+                <li>Android Studio</li>
+                <li>Node.js</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+
+            <!-- Cloud Platforms -->
+            <div class="skill-category">
+              <h4 class="h4">Cloud Platforms</h4>
+              <ul>
+                <li>Google Cloud Platform (GCP)</li>
+                <li>Microsoft Azure</li>
+                <li>Amazon Web Services (AWS)</li>
+              </ul>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+              <h4 class="h4">Databases</h4>
+              <ul>
+                <li>MySQL</li>
+                <li>Pandas</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="skill-category">
+              <h4 class="h4">Machine Learning</h4>
+              <ul>
+                <li>Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Conventional Neural Networks</li>
+                <li>Recurrent Neural Network</li>
+                <li>Computer Vision</li>
+              </ul>
+            </div>
+
+            <!-- Strong Statistics Skills -->
+            <div class="skill-category">
+              <h4 class="h4">Statistics</h4>
+              <ul>
+                <li>Probability Theory</li>
+                <li>Statistical Inference</li>
+                <li>Hypothesis Testing</li>
+                <li>Regression Analysis</li>
+                <li>Bayesian Statistics</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
